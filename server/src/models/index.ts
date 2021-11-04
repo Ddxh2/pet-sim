@@ -1,3 +1,9 @@
-import userSchema from "./User";
+import User from "./User";
 
-export { userSchema };
+export interface Models {
+  models: {
+    User: typeof User;
+  };
+}
+
+export { User };
